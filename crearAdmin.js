@@ -10,8 +10,6 @@ const Usuario = require('./models/usuario');
 async function crearAdmin() {
   try {
     await sequelize.authenticate();
-    // No necesitamos sync aquí si las tablas ya existen y el modelo está actualizado
-    // await sequelize.sync(); // Descomentar si es la primera vez y las tablas no existen
 
     console.log('--- Creación de Usuario Administrador ---');
 

@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const Usuario = require('../models/usuario'); // Asegúrate que la ruta al modelo es correcta
+const Usuario = require('../models/usuario'); 
 
 // Ruta de Login (POST /api/auth/login)
 router.post('/login', async (req, res) => {
@@ -20,7 +20,7 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Credenciales inválidas.' }); // Usuario no encontrado
     }
 
-    // 2. Comparar la contraseña ingresada con la almacenada (hasheada)
+    // 2. Comparar la contraseña ingresada con la almacenada 
     const isMatch = await usuario.comparePassword(password);
 
     if (!isMatch) {
@@ -31,13 +31,13 @@ router.post('/login', async (req, res) => {
     const payload = {
       id: usuario.id,
       username: usuario.username,
-      // Puedes añadir más información al payload si es necesario (ej. roles)
+     
     };
 
     const token = jwt.sign(
       payload,
       process.env.JWT_SECRET,
-      { expiresIn: '1h' } // El token expira en 1 hora (puedes ajustarlo)
+      { expiresIn: '1h' } // El token expira en 1 hora
     );
 
     res.json({

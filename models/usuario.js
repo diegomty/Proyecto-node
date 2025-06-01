@@ -41,7 +41,6 @@ const Usuario = sequelize.define('Usuario', {
     }
 });
 
-// Método para comparar contraseñas (añadido al prototipo del modelo)
 Usuario.prototype.comparePassword = async function (candidatePassword) {
     return bcrypt.compare(candidatePassword, this.password);
 };
