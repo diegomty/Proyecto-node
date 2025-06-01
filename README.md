@@ -3,9 +3,9 @@
 ## Descripción del Proyecto
 
 #Integrantes del equipo:
-Juan Diego Perez Montoya
-Jonatan Valente Alcantara
-Elizabeth Hernandez Gutierrrez
+* Juan Diego Perez Montoya
+* Jonatan Valente Alcantara
+* Elizabeth Hernandez Gutierrrez
 
 Este proyecto es un sistema de gestión de empleados desarrollado para el departamento de recursos humanos de la empresa "Taller de Node.js S.A. de C.V.". El objetivo principal es reemplazar el almacenamiento de datos de empleados en un documento de Excel por un sistema web seguro y robusto que permita la administración (altas, bajas, consultas y cambios) de los empleados únicamente a usuarios autorizados.
 
