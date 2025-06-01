@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const empleado = await response.json();
-            document.getElementById('edit-id').value = empleado.id; // Aunque no se muestre, es útil tenerlo
+            document.getElementById('edit-id').value = empleado.id; 
             document.getElementById('edit-nombre').value = empleado.nombre;
             document.getElementById('edit-apellidos').value = empleado.apellidos;
             document.getElementById('edit-telefono').value = empleado.telefono || '';
@@ -272,10 +272,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Funciones auxiliares para mostrar mensajes
-    function showDashboardMessage(message, type = 'info') { // type puede ser 'success', 'error', 'info'
+    function showDashboardMessage(message, type = 'info') {  
         dashboardMessage.textContent = message;
         dashboardMessage.className = `message ${type}`;
-        setTimeout(() => { // Opcional: ocultar mensaje después de un tiempo
+        setTimeout(() => { 
            // dashboardMessage.textContent = '';
            // dashboardMessage.className = 'message';
         }, 5000);
