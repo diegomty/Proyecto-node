@@ -2,6 +2,11 @@
 
 ## Descripción del Proyecto
 
+#Integrantes del equipo:
+Juan Diego Perez Montoya
+Jonatan Valente Alcantara
+Elizabeth Hernandez Gutierrrez
+
 Este proyecto es un sistema de gestión de empleados desarrollado para el departamento de recursos humanos de la empresa "Taller de Node.js S.A. de C.V.". El objetivo principal es reemplazar el almacenamiento de datos de empleados en un documento de Excel por un sistema web seguro y robusto que permita la administración (altas, bajas, consultas y cambios) de los empleados únicamente a usuarios autorizados.
 
 El sistema cuenta con un backend desarrollado en Node.js con Express.js y una base de datos MySQL, utilizando Sequelize como ORM. La autenticación de usuarios se maneja mediante JSON Web Tokens (JWT). El frontend es una aplicación de una sola página (SPA) construida con HTML, CSS y JavaScript puro (Vanilla JS), permitiendo una interfaz de usuario interactiva para las operaciones CRUD de empleados y la gestión de sesiones de administrador.
